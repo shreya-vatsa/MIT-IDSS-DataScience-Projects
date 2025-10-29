@@ -166,6 +166,9 @@ An end-to-end **data analytics** project analyzing food delivery operations, pre
 
 5. **View HTML Notebooks**
    - Simply open any `.html` file in your web browser to view the interactive notebooks
+   - **No installation needed** - All outputs and visualizations are included
+
+**📖 Quick Guide:** See [QUICK_START.md](QUICK_START.md) for a recruiter-friendly navigation guide
 
 ### Converting HTML to Jupyter Notebooks
 
@@ -183,23 +186,49 @@ A detailed conversion guide is available in [`CONVERSION_GUIDE.md`](CONVERSION_G
 ```
 MIT-IDSS-DataScience-Projects/
 │
-├── README.md                 # This file - Project overview and documentation
-├── requirements.txt          # Python dependencies
-├── LICENSE                   # MIT License
-├── .gitignore               # Git ignore patterns
+├── README.md                      # 📘 Main overview - START HERE
+├── QUICK_START.md                 # 🚀 Quick guide for recruiters/reviewers
+├── requirements.txt               # 📦 Python dependencies
+├── LICENSE                        # 📄 MIT License
 │
-├── 01-amazon-recommendation/
-│   ├── ProjectNotebook.html  # Main analysis notebook
-│   └── README.md            # Project-specific documentation
+├── 📚 Documentation/
+│   ├── SETUP_GUIDE.md            # Setup instructions
+│   ├── CONVERSION_GUIDE.md       # HTML to Jupyter guide
+│   └── DATASETS_README.md        # Dataset information
 │
-├── 02-edtech-lead-prediction/
-│   ├── Project-notebook.html # Main analysis notebook
-│   └── README.md            # Project-specific documentation
+├── 📊 Project 1: Amazon Recommendation System
+│   └── 01-amazon-recommendation/
+│       ├── README.md                             # Project details & setup
+│       ├── Recommendation_Systems_Learner_Notebook_Full_Code.ipynb  # ⚙️ Main notebook
+│       ├── ProjectNotebook.html                  # 👁️ View in browser
+│       └── data/
+│           ├── ratings_Electronics.csv
+│           └── README.md
 │
-└── 03-foodhub-analysis/
-    ├── FDS_Project_LearnerNotebook_FullCode_Main.html
-    └── README.md            # Project-specific documentation
+├── 📊 Project 2: EdTech Lead Conversion Prediction
+│   └── 02-edtech-lead-prediction/
+│       ├── README.md                             # Project details & setup
+│       ├── Learner Notebook - Full Code Version - Potential Customers Prediction.ipynb
+│       ├── Project-notebook.html                 # 👁️ View in browser
+│       └── data/
+│           ├── ExtraaLearn.csv
+│           └── README.md
+│
+└── 📊 Project 3: FoodHub Order Analysis
+    └── 03-foodhub-analysis/
+        ├── README.md                             # Project details & setup
+        ├── FDS_Project_LearnerNotebook_FullCode.ipynb  # ⚙️ Main notebook
+        ├── FDS_Project_LearnerNotebook_FullCode_Main.html  # 👁️ View in browser
+        └── data/
+            ├── foodhub_order.csv
+            └── README.md
 ```
+
+### 🎯 Quick Navigation
+- **New to this repo?** → Read [QUICK_START.md](QUICK_START.md) first
+- **Want to view analysis?** → Open any `.html` file in your browser
+- **Want to run code?** → See [SETUP_GUIDE.md](SETUP_GUIDE.md)
+- **Project details?** → Check each project's `README.md`
 
 ---
 
