@@ -53,6 +53,7 @@ ipython_config.py
 Thumbs.db
 
 # Data files (uncomment if you want to ignore large datasets)
+01-amazon-recommendation/data/ratings_Electronics.csv  # Large file - exceeds GitHub 100MB limit
 # *.csv
 # *.json
 # *.parquet

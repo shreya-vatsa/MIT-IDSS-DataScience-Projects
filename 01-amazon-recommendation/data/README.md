@@ -41,5 +41,12 @@ df.columns = ['user_id', 'prod_id', 'rating', 'timestamp']
 ## Usage
 Ensure the CSV file is in this `data/` directory before running the analysis notebook.
 
-**Note:** This dataset may be large. If file size exceeds 50MB, consider using Git LFS or providing a download link.
+**Note:** This dataset is large (304 MB) and exceeds GitHub's file size limit. 
+
+**To download the dataset:**
+1. Download from: [Amazon Product Data - Electronics Ratings](https://www.kaggle.com/datasets/skillsmash/amazon-product-reviews-electronics)
+2. Place `ratings_Electronics.csv` in this `data/` folder
+3. The file will be ignored by git (see `.gitignore`)
+
+Alternatively, you can use a smaller sample of the dataset for testing purposes.
 
