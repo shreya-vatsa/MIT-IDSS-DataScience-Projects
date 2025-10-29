@@ -165,47 +165,63 @@ An end-to-end **data analytics** project analyzing food delivery operations, pre
    python -m ipykernel install --user --name=mit-idss-projects --display-name "Python (MIT-IDSS)"
    ```
 
-4. **Open and run notebooks**
-   - Open any `.ipynb` notebook file in your editor (VS Code, Cursor, or Jupyter)
-   - Select the `Python (MIT-IDSS)` kernel (or the venv's Python kernel)
-   - Run cells and explore the projects!
+4. **Activate Virtual Environment** (if using terminal)
+   
+   **Windows Command Prompt:**
+   ```bash
+   venv\Scripts\activate.bat
+   ```
+   
+   **Windows PowerShell:**
+   ```powershell
+   .\venv\Scripts\Activate.ps1
+   # Or use full path:
+   # C:\Users\YourUsername\Cursor Apps\MIT-IDSS-DataScience-Projects\venv\Scripts\Activate.ps1
+   ```
+
+5. **Open and run notebooks**
+   
+   **In Cursor/VS Code (Recommended):**
+   - Open any `.ipynb` notebook file
+   - Click "Select Kernel" (top-right corner)
+   - Choose: `Python (MIT-IDSS)` or browse to `.\venv\Scripts\python.exe`
+   - Run cells with Shift+Enter (run from top to bottom)
+   
+   **In Standalone Jupyter:**
+   ```bash
+   jupyter notebook
+   # or
+   jupyter lab
+   ```
 
 **💡 View Without Setup:** Simply open any `.html` file in your web browser - no installation needed! All outputs and visualizations are included.
+
+#### Troubleshooting
+
+**"Module not found" error?**
+→ Make sure you selected the venv kernel (check top-right of notebook)
+
+**Kernel not showing?**
+→ Run the kernel registration command again (Step 3 above)
+
+**Can't activate venv?**
+→ Make sure you're in the project root folder where `venv` exists
+→ Try using the full path: `C:\Users\YourUsername\Cursor Apps\MIT-IDSS-DataScience-Projects\venv\Scripts\Activate.ps1`
 
 ---
 
 ### Manual Setup (Alternative)
 
-If you prefer manual setup or the automated script doesn't work:
+If the automated script doesn't work:
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/MIT-IDSS-DataScience-Projects.git
-   cd MIT-IDSS-DataScience-Projects
-   ```
+```bash
+python -m venv venv
+venv\Scripts\activate.bat  # Windows Command Prompt
+# or: .\venv\Scripts\Activate.ps1  # Windows PowerShell
+pip install -r requirements.txt
+python -m ipykernel install --user --name=mit-idss-projects --display-name "Python (MIT-IDSS)"
+```
 
-2. **Create and activate virtual environment**
-   ```bash
-   python -m venv venv
-   
-   # On Windows
-   venv\Scripts\activate
-   
-   # On macOS/Linux
-   source venv/bin/activate
-   ```
-
-3. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Register Jupyter kernel**
-   ```bash
-   python -m ipykernel install --user --name=mit-idss-projects --display-name "Python (MIT-IDSS)"
-   ```
-
-**📖 Need more help?** See [QUICK_START.md](QUICK_START.md).
 ---
 
 ## 📁 Repository Structure
@@ -214,7 +230,6 @@ If you prefer manual setup or the automated script doesn't work:
 MIT-IDSS-DataScience-Projects/
 │
 ├── README.md                      # 📘 Main overview - START HERE
-├── QUICK_START.md                 # 🚀 Quick guide for recruiters/reviewers
 ├── requirements.txt               # 📦 Python dependencies
 ├── LICENSE                        # 📄 MIT License
 │
@@ -252,16 +267,26 @@ MIT-IDSS-DataScience-Projects/
 ```
 
 ### 🎯 Quick Navigation
-- **New to this repo?** → Read [QUICK_START.md](QUICK_START.md) first
-- **Want to view analysis?** → Open any `.html` file in your browser
-- **Want to run code?** → See [SETUP_GUIDE.md](SETUP_GUIDE.md)
-- **Project details?** → Check each project's `README.md`
+- **New to this repo?** → Start with [Getting Started](#-getting-started) section
+- **Want to view analysis?** → Open any `.html` file in your browser (no setup needed!)
+- **Want to run code?** → Follow Quick Setup steps above
+- **Project details?** → See [Projects](#-projects) section and individual project READMEs
 
 ---
 
-## 📝 Project Details
+## ❓ Common Questions
 
-For detailed information about each project, including methodology, results, and insights, please refer to the individual project folders and their respective README files.
+**Q: Can I view results without running code?**  
+A: Yes! Open any `.html` file in your browser - all outputs and visualizations are included.
+
+**Q: Are datasets included?**  
+A: Most datasets are in the `data/` folders. The Amazon Electronics ratings dataset (304 MB) exceeds GitHub's limit - see `01-amazon-recommendation/data/README.md` for download instructions.
+
+**Q: What Python version is required?**  
+A: Python 3.8 or higher. See `requirements.txt` for dependencies.
+
+**Q: The setup script didn't work - what now?**  
+A: Try the Manual Setup alternative above or check the troubleshooting section.
 
 ---
 
