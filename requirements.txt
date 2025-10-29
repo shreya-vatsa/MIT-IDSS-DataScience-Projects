@@ -1,6 +1,6 @@
 # Core Data Science Libraries
 pandas>=1.5.0
-numpy>=1.23.0
+numpy>=1.23.0,<2.0.0  # NumPy 2.x incompatible with scikit-surprise
 
 # Statistical Analysis
 statsmodels>=0.14.0
@@ -19,6 +19,5 @@ notebook>=6.5.0
 ipykernel>=6.20.0
 
 # Additional ML Libraries (as used in projects)
-# Uncomment if needed for specific projects
-# surprise>=2.1.0  # For collaborative filtering recommendation systems
+scikit-surprise>=1.1.0  # For collaborative filtering recommendation systems (Amazon project)
 

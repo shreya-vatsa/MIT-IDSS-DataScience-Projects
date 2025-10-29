@@ -130,12 +130,9 @@ An end-to-end **data analytics** project analyzing food delivery operations, pre
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Python 3.8 or higher
-- pip (Python package installer)
-- Git (for cloning the repository)
+### Quick Setup (Recommended for Recruiters)
 
-### Installation
+**The easiest way to get started - just run one script!**
 
 1. **Clone the repository**
    ```bash
@@ -143,7 +140,51 @@ An end-to-end **data analytics** project analyzing food delivery operations, pre
    cd MIT-IDSS-DataScience-Projects
    ```
 
-2. **Create a virtual environment (recommended)**
+2. **Run the automated setup script**
+   
+   **Windows (Command Prompt or PowerShell):**
+   ```bash
+   setup_venv.bat
+   ```
+   
+   **Windows (PowerShell - if the .bat doesn't work):**
+   ```powershell
+   .\setup_venv.ps1
+   ```
+   
+   This single script will:
+   - ✅ Check if Python is installed
+   - ✅ Create a virtual environment
+   - ✅ Install all required packages
+   - ✅ Set everything up automatically
+
+3. **Register Jupyter kernel** (one-time, after setup completes)
+   
+   In the same terminal window where setup ran:
+   ```bash
+   python -m ipykernel install --user --name=mit-idss-projects --display-name "Python (MIT-IDSS)"
+   ```
+
+4. **Open and run notebooks**
+   - Open any `.ipynb` notebook file in your editor (VS Code, Cursor, or Jupyter)
+   - Select the `Python (MIT-IDSS)` kernel (or the venv's Python kernel)
+   - Run cells and explore the projects!
+
+**💡 View Without Setup:** Simply open any `.html` file in your web browser - no installation needed! All outputs and visualizations are included.
+
+---
+
+### Manual Setup (Alternative)
+
+If you prefer manual setup or the automated script doesn't work:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/MIT-IDSS-DataScience-Projects.git
+   cd MIT-IDSS-DataScience-Projects
+   ```
+
+2. **Create and activate virtual environment**
    ```bash
    python -m venv venv
    
@@ -159,16 +200,12 @@ An end-to-end **data analytics** project analyzing food delivery operations, pre
    pip install -r requirements.txt
    ```
 
-4. **Launch Jupyter Notebook**
+4. **Register Jupyter kernel**
    ```bash
-   jupyter notebook
+   python -m ipykernel install --user --name=mit-idss-projects --display-name "Python (MIT-IDSS)"
    ```
 
-5. **View HTML Notebooks**
-   - Simply open any `.html` file in your web browser to view the interactive notebooks
-   - **No installation needed** - All outputs and visualizations are included
-
-**📖 Quick Guide:** See [QUICK_START.md](QUICK_START.md) for a recruiter-friendly navigation guide
+**📖 Need more help?** See [QUICK_START.md](QUICK_START.md) for a recruiter-friendly navigation guide or [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed instructions.
 
 ### Converting HTML to Jupyter Notebooks
 

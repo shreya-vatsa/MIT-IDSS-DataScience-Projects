@@ -17,9 +17,16 @@ This repository showcases **3 complete data science projects** from the MIT IDSS
 
 ### Option 2: Run Notebooks Locally
 1. **Clone the repository**
-2. **Install dependencies:** `pip install -r requirements.txt`
-3. **Open `.ipynb` files** in Jupyter Notebook or VS Code
-4. **Run cells** to see the analysis in action
+2. **Run the automated setup script:**
+   - Windows: `setup_venv.bat` (or `.\setup_venv.ps1` in PowerShell)
+   - This creates a virtual environment and installs all dependencies automatically
+3. **Register Jupyter kernel** (one-time, after setup):
+   ```bash
+   python -m ipykernel install --user --name=mit-idss-projects --display-name "Python (MIT-IDSS)"
+   ```
+4. **Open `.ipynb` files** in Cursor, VS Code, or Jupyter
+5. **Select the kernel** (top-right of notebook) → Choose `Python (MIT-IDSS)`
+6. **Run cells** to see the analysis in action
 
 ## 📊 Projects at a Glance
 
@@ -54,15 +61,48 @@ This repository showcases **3 complete data science projects** from the MIT IDSS
 2. **Review the notebook** - See the complete analysis
 3. **Check data/README.md** - Understand the dataset used
 
-## 🚀 For Technical Review
+## 🚀 Running Notebooks Locally (Detailed Steps)
 
-If you want to verify code execution:
-1. Navigate to any project folder
-2. Run `pip install -r ../../requirements.txt` (from project folder)
-3. Open the `.ipynb` notebook
-4. Execute cells sequentially
+### After Running setup_venv.bat:
 
-**Note:** Some projects may require additional libraries (e.g., scikit-surprise). See project README for details.
+**Step 1: Register Jupyter Kernel** (one-time only)
+```bash
+python -m ipykernel install --user --name=mit-idss-projects --display-name "Python (MIT-IDSS)"
+```
+
+**Step 2: Open and Run Notebooks**
+
+#### Method A: In Cursor/VS Code (Recommended)
+1. Open any `.ipynb` notebook file
+2. Click "Select Kernel" (top-right corner)
+3. Choose: `Python (MIT-IDSS)` or browse to `.\venv\Scripts\python.exe`
+4. Run cells with Shift+Enter (run from top to bottom)
+
+#### Method B: Standalone Jupyter
+```bash
+# Activate venv first
+venv\Scripts\activate.bat
+
+# Launch Jupyter
+jupyter notebook
+# or
+jupyter lab
+```
+
+**Daily Workflow:**
+- **In Cursor/VS Code:** Just open the notebook - no activation needed if kernel is selected
+- **In Terminal:** Activate venv first: `venv\Scripts\activate.bat`
+
+### Troubleshooting
+
+**"Module not found" error?**
+→ Make sure you selected the venv kernel (check top-right of notebook)
+
+**Kernel not showing?**
+→ Run the kernel registration command again (Step 1 above)
+
+**Can't activate venv?**
+→ Make sure you're in the project root folder where `venv` exists
 
 ## ❓ Common Questions
 
@@ -76,9 +116,8 @@ A: Yes, datasets are in the `data/` folder of each project.
 A: Python 3.8 or higher. See `requirements.txt` for all dependencies.
 
 **Q: Do I need special software?**  
-A: For viewing: Just a web browser (for HTML files). For running: Jupyter Notebook or VS Code.
+A: For viewing: Just a web browser (for HTML files). For running: Cursor, VS Code, or Jupyter Notebook.
 
----
-
-**For detailed setup instructions, see [SETUP_GUIDE.md](SETUP_GUIDE.md)**
+**Q: How do I set up everything?**  
+A: Just run `setup_venv.bat` - it handles everything automatically! See the main README.md for full instructions.
 
