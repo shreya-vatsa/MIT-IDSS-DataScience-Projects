@@ -205,17 +205,7 @@ If you prefer manual setup or the automated script doesn't work:
    python -m ipykernel install --user --name=mit-idss-projects --display-name "Python (MIT-IDSS)"
    ```
 
-**📖 Need more help?** See [QUICK_START.md](QUICK_START.md) for a recruiter-friendly navigation guide or [SETUP_GUIDE.md](SETUP_GUIDE.md) for detailed instructions.
-
-### Converting HTML to Jupyter Notebooks
-
-If you prefer working with `.ipynb` files, you can convert the HTML notebooks:
-
-1. Use an online converter or Python script to extract the notebook JSON from HTML
-2. Or manually recreate notebooks using the code visible in the HTML files
-
-A detailed conversion guide is available in [`CONVERSION_GUIDE.md`](CONVERSION_GUIDE.md).
-
+**📖 Need more help?** See [QUICK_START.md](QUICK_START.md).
 ---
 
 ## 📁 Repository Structure
@@ -301,9 +291,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👤 Author
 
-[Your Name]  
-[Your LinkedIn Profile]  
-[Your Email]
+[Shreya Vatsa]  
+[https://www.linkedin.com/in/shreyavatsa/]  
+[shreya.vatsa05@outlook.com]
 
 ---
 
