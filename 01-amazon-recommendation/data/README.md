@@ -44,7 +44,7 @@ Ensure the CSV file is in this `data/` directory before running the analysis not
 **Note:** This dataset is large (304 MB) and exceeds GitHub's file size limit. 
 
 **To download the dataset:**
-1. Download from: [Amazon Product Data - Electronics Ratings](https://www.kaggle.com/datasets/skillsmash/amazon-product-reviews-electronics)
+1. Download from: [Google Drive](https://drive.google.com/file/d/1XFOF_-93Pn0cEhztw2zJozdFW19XVAw7/view?usp=sharing)
 2. Place `ratings_Electronics.csv` in this `data/` folder
 3. The file will be ignored by git (see `.gitignore`)
 
